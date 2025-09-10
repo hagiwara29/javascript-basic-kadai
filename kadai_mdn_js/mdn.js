@@ -1,12 +1,9 @@
 const today = new Date();
 
-console.log(today.getFullYear() -1);
-console.log(today.getMonth() +2);
-console.log(today.getDate() +2);
+const year = today.getFullYear();
 
-const formatteedDate = '${year}年${month}月${day}日';
+const month = today.getMonth() +1;
 
-document.addEventListener('DOMContentLoaded', () => {
-  const dateDisplayElement = document.getElementById('date-display');
-  dateDisplayElement.textContent = formatteedDate;
-});
+const day = today.getDate();
+
+console.log(year + '年' + month + '月' + day + '日');
