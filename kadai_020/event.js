@@ -6,7 +6,7 @@ btn.addEventListener('click', () => {
 
   const childList = document.createElement('li');
 
-  childList.textContent = 'ボタンをクリックしました';
+  text.textContent = 'ボタンをクリックしました';
 
   text.appendChild(childList);
 });
